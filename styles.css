@@ -229,7 +229,7 @@ body {
   }
   .section.details .details-left {
     align-self: flex-start;
-    margin-top: -50px;
+    margin-top: -8px;
     position: relative !important;
   }
   .details .rsvp-options:not(.hidden) {
@@ -272,6 +272,7 @@ body {
 .section.details .details-left {
   bottom: 0;
   left: 0;
+  width: 360px;
 }
 
 .details .details-actions {
