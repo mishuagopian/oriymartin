@@ -38,7 +38,7 @@
       rsvpButton.classList.add("disabled");
       rsvpButton.textContent = "...";
 
-      const formId = '1FAIpQLSeezZsQkB6qBYVhBpiKOoO4cL4KNggPEcctlYWtUYPbKRSyPg';
+      const formId = '1FAIpQLSelZp_QPF3onl2EaPCTT0j3ZkCsdiALX_QTczPPqHaFyJIecw';
       const formUrl = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
       const body = new URLSearchParams();
       body.append('entry.1303125680', allNames.join(",")); // Nombres
@@ -92,9 +92,12 @@
     alert("Copiaste los datos de cuenta a tu portapapeles");
   };
   document.getElementById("alias-ars").addEventListener("click", () => {
-    copyToClipboard("lucasfguarino");
+    copyToClipboard("mecohen@gmail.com");
   });
   document.getElementById("alias-usd").addEventListener("click", () => {
-    copyToClipboard("lucasfguarinouss");
+    copyToClipboard("mecohen@gmail.com");
+  });
+  document.getElementById("alias-zelle").addEventListener("click", () => {
+    copyToClipboard("mecohen@gmail.com");
   });
 })();
