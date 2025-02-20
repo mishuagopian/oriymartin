@@ -16,7 +16,7 @@
   rsvpButton.addEventListener("click", (event) => {
     if (rsvpButton.classList.contains("disabled")) return;
 
-    if (rsvpButton.textContent === "CONFIRMAR ASISTENCIA") {
+    if (rsvpButton.textContent === "RSVP - CONFIRMAR ASISTENCIA") {
       rsvpButton.parentElement.classList.add("expanded");
       rsvpButton.classList.remove("light");
       document.getElementById("rsvp-options").classList.remove("hidden");
@@ -92,10 +92,10 @@
     alert("Copiaste los datos de cuenta a tu portapapeles");
   };
   document.getElementById("alias-ars").addEventListener("click", () => {
-    copyToClipboard("mecohen@gmail.com");
+    copyToClipboard("MEC1985CA");
   });
   document.getElementById("alias-usd").addEventListener("click", () => {
-    copyToClipboard("mecohen@gmail.com");
+    copyToClipboard("MEC1985CAU");
   });
   document.getElementById("alias-zelle").addEventListener("click", () => {
     copyToClipboard("mecohen@gmail.com");
