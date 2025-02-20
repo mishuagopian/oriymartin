@@ -233,7 +233,8 @@ body {
     position: relative !important;
   }
   .details .rsvp-options:not(.hidden) {
-    height: 180px !important;
+    height: 210px !important;
+    overflow-y: auto;
   }
   .details .present-options:not(.hidden) {
     height: 270px !important;
@@ -344,7 +345,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 180px;
+  height: 200px;
   margin-bottom: 10px;
   max-width: 100%;
   overflow: hidden;
@@ -371,4 +372,8 @@ body {
   margin-left: 10px;
   text-align: start;
   min-width: 180px;
+}
+
+#rsvp-alergies-input {
+  margin-top: 5px;
 }

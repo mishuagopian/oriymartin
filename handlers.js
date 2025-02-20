@@ -26,14 +26,20 @@
       const veggieChecked = document.getElementById("rsvp-veggie").checked;
       const veganoChecked = document.getElementById("rsvp-vegano").checked;
       const celiacChecked = document.getElementById("rsvp-celiac").checked;
+      const alergiesChecked = document.getElementById("rsvp-alergies").checked;
+      const alergiesInput = document.getElementById("rsvp-alergies-input").value;
 
-      if (!noneChecked && !veggieChecked && !veganoChecked && !celiacChecked) {
+      if (!noneChecked && !veggieChecked && !veganoChecked && !celiacChecked && !alergiesChecked) {
         return alert("Por favor seleccioná una opción para confirmar tu asistencia");
+      }
+      if (alergiesChecked && !alergiesInput.length) {
+        return alert("Por favor especificá tus alergias");
       }
       const answer = noneChecked ? ["Ninguna"] : [];
       if (veggieChecked) answer.push("Vegetariana");
       if (veganoChecked) answer.push("Vegana");
       if (celiacChecked) answer.push("Celíaca");
+      if (alergiesChecked) answer.push(`Alergias: ${alergiesInput}`);
 
       rsvpButton.classList.add("disabled");
       rsvpButton.textContent = "...";
